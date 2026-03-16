@@ -1,0 +1,12 @@
+Province,ARIMA_ordre,ARIMA_MAE,ARIMA_RMSE,ARIMA_MAPE,Prophet_MAE,Prophet_RMSE,Prophet_MAPE,Meilleur_MAE,Meilleur_RMSE
+Canada,"(4, 1, 2)",0.241,0.272,3.49,0.478,0.503,6.93,ARIMA,ARIMA
+Alberta,"(2, 1, 2)",0.569,0.685,7.67,0.584,0.7,8.55,ARIMA,ARIMA
+Colombie-Britannique,"(4, 1, 4)",0.293,0.341,4.62,1.082,1.113,17.25,ARIMA,ARIMA
+Manitoba,"(2, 1, 2)",0.317,0.379,5.62,0.31,0.367,5.21,Prophet,Prophet
+Nouveau-Brunswick,"(2, 1, 4)",0.491,0.537,7.02,0.646,0.797,9.62,ARIMA,ARIMA
+Terre-Neuve-et-Labrador,"(3, 1, 3)",0.5,0.652,5.21,0.58,0.745,6.03,ARIMA,ARIMA
+Nouvelle-Écosse,"(4, 1, 3)",0.274,0.327,4.05,0.572,0.669,8.85,ARIMA,ARIMA
+Ontario,"(3, 0, 3)",0.305,0.356,3.92,0.895,0.911,11.6,ARIMA,ARIMA
+Île-du-Prince-Édouard,"(1, 1, 1)",0.594,0.718,7.34,0.559,0.743,6.82,Prophet,ARIMA
+Québec,"(1, 1, 2)",0.348,0.395,6.05,0.743,0.803,12.92,ARIMA,ARIMA
+Saskatchewan,"(4, 1, 4)",0.534,0.64,10.62,0.556,0.68,11.27,ARIMA,ARIMA

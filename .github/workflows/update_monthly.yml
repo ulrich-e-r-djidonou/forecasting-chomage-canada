@@ -1,0 +1,45 @@
+name: Monthly Data Update
+
+on:
+  schedule:
+    - cron: "0 8 5 * *"
+  workflow_dispatch:
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python 3.11
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Install dependencies
+        run: |
+          pip install --upgrade pip
+          pip install -r requirements.txt
+          pip install papermill ipykernel
+
+      - name: Update data
+        run: python scripts/update_data.py
+
+      - name: Run notebooks
+        run: |
+          papermill notebooks/01_exploration.ipynb notebooks/01_exploration.ipynb
+          papermill notebooks/02_nettoyage.ipynb notebooks/02_nettoyage.ipynb
+          papermill notebooks/03_modelisation.ipynb notebooks/03_modelisation.ipynb
+          papermill notebooks/04_visualisation.ipynb notebooks/04_visualisation.ipynb
+          papermill notebooks/05_cross_validation.ipynb notebooks/05_cross_validation.ipynb
+          papermill notebooks/06_regresseurs_externes.ipynb notebooks/06_regresseurs_externes.ipynb
+
+      - name: Commit and push changes
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add data/processed/ outputs/figures/ notebooks/
+          git diff --cached --quiet || git commit -m "Auto-update: data, notebooks and figures [$(date -u +%Y-%m-%d)]"
+          git push
