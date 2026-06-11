@@ -1,4 +1,4 @@
-"""
+r"""
 Script de mise à jour automatique des données StatCan.
 Télécharge la dernière version de la table 14-10-0287-03 et met à jour
 le fichier processed.
