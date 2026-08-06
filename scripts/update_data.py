@@ -6,9 +6,12 @@ le fichier processed.
 Usage :
     python scripts/update_data.py
 
-Pour automatiser (Windows Task Scheduler) :
-    - Programme : C:\Users\ulric\anaconda3\python.exe
-    - Arguments : C:\Users\ulric\Downloads\OpenDataCA\projet-forecasting-chomage\scripts\update_data.py
+La mise à jour tourne aussi toute seule via GitHub Actions
+(.github/workflows/update_monthly.yml), le 5 de chaque mois.
+
+Pour automatiser en local (Windows Task Scheduler) :
+    - Programme : <chemin vers python.exe>
+    - Arguments : <racine du dépôt>\scripts\update_data.py
     - Fréquence : mensuelle (le 15 de chaque mois, après la publication EPA)
 """
 

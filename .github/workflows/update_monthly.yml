@@ -11,10 +11,10 @@ jobs:
 
     steps:
       - name: Checkout repository
-        uses: actions/checkout@v4
+        uses: actions/checkout@v5
 
       - name: Set up Python 3.11
-        uses: actions/setup-python@v5
+        uses: actions/setup-python@v6
         with:
           python-version: "3.11"
 
@@ -27,14 +27,20 @@ jobs:
       - name: Update data
         run: python scripts/update_data.py
 
+      # Les carnets font `sys.path.insert(0, '../src')` : ce chemin n'est
+      # correct que si le noyau tourne depuis notebooks/, comme le fait
+      # Jupyter en local. Sans --cwd, papermill execute depuis la racine du
+      # depot et '../src' pointe hors du projet, d'ou le ModuleNotFoundError
+      # sur `utils`. --cwd ne change que le repertoire d'execution du noyau ;
+      # les chemins d'entree et de sortie restent relatifs a la racine.
       - name: Run notebooks
         run: |
-          papermill notebooks/01_exploration.ipynb notebooks/01_exploration.ipynb
-          papermill notebooks/02_nettoyage.ipynb notebooks/02_nettoyage.ipynb
-          papermill notebooks/03_modelisation.ipynb notebooks/03_modelisation.ipynb
-          papermill notebooks/04_visualisation.ipynb notebooks/04_visualisation.ipynb
-          papermill notebooks/05_cross_validation.ipynb notebooks/05_cross_validation.ipynb
-          papermill notebooks/06_regresseurs_externes.ipynb notebooks/06_regresseurs_externes.ipynb
+          papermill notebooks/01_exploration.ipynb notebooks/01_exploration.ipynb --cwd notebooks
+          papermill notebooks/02_nettoyage.ipynb notebooks/02_nettoyage.ipynb --cwd notebooks
+          papermill notebooks/03_modelisation.ipynb notebooks/03_modelisation.ipynb --cwd notebooks
+          papermill notebooks/04_visualisation.ipynb notebooks/04_visualisation.ipynb --cwd notebooks
+          papermill notebooks/05_cross_validation.ipynb notebooks/05_cross_validation.ipynb --cwd notebooks
+          papermill notebooks/06_regresseurs_externes.ipynb notebooks/06_regresseurs_externes.ipynb --cwd notebooks
 
       - name: Commit and push changes
         run: |
