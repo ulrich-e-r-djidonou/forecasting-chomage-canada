@@ -1,1 +1,1 @@
-{"cutoff_date":"2025-02-01","horizon_months":12,"train_obs":6490,"test_obs":132,"geographies":["Canada","Alberta","British Columbia","Manitoba","New Brunswick","Newfoundland and Labrador","Nova Scotia","Ontario","Prince Edward Island","Quebec","Saskatchewan"]}
+{"cutoff_date":"2025-06-01","horizon_months":12,"train_obs":6534,"test_obs":132,"geographies":["Canada","Alberta","British Columbia","Manitoba","New Brunswick","Newfoundland and Labrador","Nova Scotia","Ontario","Prince Edward Island","Quebec","Saskatchewan"]}
