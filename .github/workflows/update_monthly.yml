@@ -9,6 +9,13 @@ jobs:
   update:
     runs-on: ubuntu-latest
 
+    # Le dernier pas du workflow repousse les donnees et les figures
+    # regenerees. Sans cette permission, le jeton fourni au run est en lecture
+    # seule et le push termine sur un 403, apres pourtant vingt minutes de
+    # calcul reussi.
+    permissions:
+      contents: write
+
     steps:
       - name: Checkout repository
         uses: actions/checkout@v5
