@@ -1,5 +1,5 @@
 Modèle,Régresseurs,MAE,RMSE,MAPE
-"ARIMA(3, 0, 0)",Non,0.241,0.28,3.6
-"SARIMAX(2, 1, 0)",Oui (taux dir. + IPC),0.591,0.667,8.85
-Prophet,Non,0.781,0.822,11.45
-Prophet+,Oui (taux dir. + IPC),1.368,1.406,20.34
+"ARIMA(3, 0, 0)",Non,0.307,0.35,4.63
+"SARIMAX(2, 1, 0)",Oui (taux dir. + IPC),0.695,0.756,10.47
+Prophet,Non,0.731,0.783,10.76
+Prophet+,Oui (taux dir. + IPC),1.336,1.377,20.02

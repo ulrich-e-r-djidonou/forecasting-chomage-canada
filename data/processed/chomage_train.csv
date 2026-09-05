@@ -593,6 +593,8 @@ date,geo,unemployment_rate
 2025-04-01,Alberta,7.2
 2025-05-01,Alberta,7.4
 2025-06-01,Alberta,6.8
+2025-07-01,Alberta,7.9
+2025-08-01,Alberta,8.2
 1976-01-01,British Columbia,8.5
 1976-02-01,British Columbia,8.4
 1976-03-01,British Columbia,8.2
@@ -1187,6 +1189,8 @@ date,geo,unemployment_rate
 2025-04-01,British Columbia,6.2
 2025-05-01,British Columbia,6.5
 2025-06-01,British Columbia,5.7
+2025-07-01,British Columbia,6.0
+2025-08-01,British Columbia,6.3
 1976-01-01,Canada,7.1
 1976-02-01,Canada,7.0
 1976-03-01,Canada,6.7
@@ -1781,6 +1785,8 @@ date,geo,unemployment_rate
 2025-04-01,Canada,6.9
 2025-05-01,Canada,7.0
 2025-06-01,Canada,6.9
+2025-07-01,Canada,6.9
+2025-08-01,Canada,7.1
 1976-01-01,Manitoba,5.6
 1976-02-01,Manitoba,4.9
 1976-03-01,Manitoba,4.4
@@ -2375,6 +2381,8 @@ date,geo,unemployment_rate
 2025-04-01,Manitoba,5.4
 2025-05-01,Manitoba,5.8
 2025-06-01,Manitoba,5.5
+2025-07-01,Manitoba,5.5
+2025-08-01,Manitoba,5.8
 1976-01-01,New Brunswick,11.2
 1976-02-01,New Brunswick,10.9
 1976-03-01,New Brunswick,10.5
@@ -2969,6 +2977,8 @@ date,geo,unemployment_rate
 2025-04-01,New Brunswick,6.9
 2025-05-01,New Brunswick,6.3
 2025-06-01,New Brunswick,7.4
+2025-07-01,New Brunswick,7.5
+2025-08-01,New Brunswick,7.7
 1976-01-01,Newfoundland and Labrador,12.3
 1976-02-01,Newfoundland and Labrador,12.7
 1976-03-01,Newfoundland and Labrador,12.3
@@ -3563,6 +3573,8 @@ date,geo,unemployment_rate
 2025-04-01,Newfoundland and Labrador,9.7
 2025-05-01,Newfoundland and Labrador,9.7
 2025-06-01,Newfoundland and Labrador,9.6
+2025-07-01,Newfoundland and Labrador,10.6
+2025-08-01,Newfoundland and Labrador,10.7
 1976-01-01,Nova Scotia,7.9
 1976-02-01,Nova Scotia,7.9
 1976-03-01,Nova Scotia,7.6
@@ -4157,6 +4169,8 @@ date,geo,unemployment_rate
 2025-04-01,Nova Scotia,7.2
 2025-05-01,Nova Scotia,6.5
 2025-06-01,Nova Scotia,6.8
+2025-07-01,Nova Scotia,6.9
+2025-08-01,Nova Scotia,6.5
 1976-01-01,Ontario,6.4
 1976-02-01,Ontario,6.1
 1976-03-01,Ontario,6.0
@@ -4751,6 +4765,8 @@ date,geo,unemployment_rate
 2025-04-01,Ontario,7.8
 2025-05-01,Ontario,7.9
 2025-06-01,Ontario,7.8
+2025-07-01,Ontario,7.8
+2025-08-01,Ontario,7.7
 1976-01-01,Prince Edward Island,9.9
 1976-02-01,Prince Edward Island,10.9
 1976-03-01,Prince Edward Island,8.6
@@ -5345,6 +5361,8 @@ date,geo,unemployment_rate
 2025-04-01,Prince Edward Island,7.0
 2025-05-01,Prince Edward Island,8.5
 2025-06-01,Prince Edward Island,8.5
+2025-07-01,Prince Edward Island,8.6
+2025-08-01,Prince Edward Island,8.0
 1976-01-01,Quebec,8.1
 1976-02-01,Quebec,8.7
 1976-03-01,Quebec,7.8
@@ -5939,6 +5957,8 @@ date,geo,unemployment_rate
 2025-04-01,Quebec,6.0
 2025-05-01,Quebec,5.8
 2025-06-01,Quebec,6.2
+2025-07-01,Quebec,5.5
+2025-08-01,Quebec,5.9
 1976-01-01,Saskatchewan,3.8
 1976-02-01,Saskatchewan,4.1
 1976-03-01,Saskatchewan,3.6
@@ -6533,3 +6553,5 @@ date,geo,unemployment_rate
 2025-04-01,Saskatchewan,4.4
 2025-05-01,Saskatchewan,4.3
 2025-06-01,Saskatchewan,4.9
+2025-07-01,Saskatchewan,5.1
+2025-08-01,Saskatchewan,4.8
